@@ -1,0 +1,3 @@
+[submodule "tis256"]
+	path = tis256
+	url = git@sinitax.com:sinitax/tis256

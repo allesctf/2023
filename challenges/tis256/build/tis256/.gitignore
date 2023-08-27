@@ -1,0 +1,10 @@
+tis256
+tis256-curses
+tis256-gui
+tis256-vis
+compile_commands.json
+.cache
+notes
+.gdb_history
+vgcore*
+lib/raylib

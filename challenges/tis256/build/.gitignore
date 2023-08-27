@@ -1,0 +1,7 @@
+out
+out.asm
+__pycache__
+release/tis256/tis256
+release/tis256/tis256-curses
+release/tis256/tis256-gui
+release/tis256.zip

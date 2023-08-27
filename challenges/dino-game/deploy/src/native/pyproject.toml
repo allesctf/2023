@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "native"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pybind11 = "^2.8.0"
+
+[build-system]
+requires = [
+    "poetry-core>=1.1.0",
+    "setuptools>=65.4.1",
+    "pybind11>=2.8.0"
+]
+build-backend = "poetry.core.masonry.api"

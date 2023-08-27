@@ -1,0 +1,41 @@
+8bit cpu:
+- 4 gpr
+
+bus-based interface between component:
+- format:
+  - 1 value: dest
+  - 1 value: source
+  - 1 value: command
+  - 2 value: operands
+
+fixed size instructions (1-byte each):
+- jnz (prefix) 0b000 (offset) 0bXXXXX (5bit signed)
+- mov (prefix) 0b0010 (src) 0bXX (dst) 0bXX
+- swp (prefix) 0b0011 (src) 0bXX (dst) 0bXX
+- shl (prefix) 0b010 (src) 0bXX (sh) 0bXXX
+- shr (prefix) 0b011 (src) 0bXX (sh) 0bXXX
+- add (prefix) 0b1000 (src) 0bXX (dst) 0bXX
+- sub (prefix) 0b1001 (src) 0bXX (dst) 0bXX
+- xor (prefix) 0b1010 (src) 0bXX (dst) 0bXX
+- and (prefix) 0b1011 (src) 0bXX (dst) 0bXX
+- ldb (prefix) 0b1100 (reg-addr) 0bXX (reg-dst) 0bXX
+- stb (prefix) 0b1101 (reg-src) 0bXX (reg-addr) 0bXX
+- inp (prefix) 0b111000 (dst) 0bXX
+- out (prefix) 0b111001 (src) 0bXX
+- not (prefix) 0b111010 (reg) 0bXX
+- jre (prefix) 0b111011 (reg) 0bXX
+- inc (prefix) 0b111100 (reg) 0bXX
+- dec (prefix) 0b111101 (reg) 0bXX
+- hlt (prefix) 0b11111111
+
+program:
+- read input into memory,
+- compute some checksum over values
+- validate checksum
+
+description:
+- pff password managers, I store secrets in a TPM! (tesselated platform module)
+- run with 'echo -ne "SECRET\x00" | ./tis256 chall.asm'
+
+credit the artist:
+https://www.pixilart.com/art/bongo-cat-8c9e158c184a944

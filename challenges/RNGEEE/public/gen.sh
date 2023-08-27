@@ -1,0 +1,1 @@
+../setup/gen.sh

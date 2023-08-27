@@ -1,0 +1,1 @@
+ALLES!{inspired by the RoT verification of the LPC54S0xx, cf. https://www.nxp.com/docs/en/application-note/AN13390.pdf}

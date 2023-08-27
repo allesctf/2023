@@ -1,0 +1,15 @@
+[package]
+name = "injector"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sysinfo = "0.29.7"
+nix = "0.26.2"
+proc-maps = "0.3.1"
+goblin = "0.7.1"
+aes = "0.7.5"
+block-modes = "0.8.1"
+md-5 = "0.10.0"

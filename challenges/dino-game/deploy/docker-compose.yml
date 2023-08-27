@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:23.4
+    ports:
+      - 8123:8123
+      - 9000:9000
+    volumes:
+      - ./db/init.sh:/docker-entrypoint-initdb.d/init-db.sh:ro
+  game:
+    build:
+      context: .
+    ports:
+      - "1024:1024"
